@@ -2,6 +2,7 @@ import React from 'react'
 import { HashRouter, useRoutes } from 'react-router-dom'
 import routes from './routes'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 const Element: React.FC = () => {
   const element = useRoutes(routes)
@@ -12,7 +13,10 @@ const App: React.FC = () => {
   return (
     <HashRouter>
       <Header />
-      <Element />
+      <main className="h-[calc(100vh_-_91px)] bg-dark">
+        <Element />
+      </main>
+      <Footer />
     </HashRouter>
   )
 }
