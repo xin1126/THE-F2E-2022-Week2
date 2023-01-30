@@ -5,12 +5,23 @@ module.exports = {
     extend: {
       // 自訂顏色
       colors: {
-        // primary: '#007FAB',
-        // secondary: '#FF5136',
+        primary: '#B7EC5D',
+        secondary: '#648D1E',
+        dark: '#4D4D4D',
+        gray: '#666666',
         // info: '#A46039',
         // background: '#ffc37d',
         // success: '#065f46',
         // danger: '#991b1b',
+      },
+      container: {
+        center: true,
+        screens: {
+          '2xl': '1650px',
+        },
+        padding: {
+          DEFAULT: '12px',
+        },
       },
     },
   },
