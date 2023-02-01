@@ -13,7 +13,7 @@ const App: React.FC = () => {
   return (
     <HashRouter>
       <Header />
-      <main className="h-[calc(100vh_-_91px)] bg-dark">
+      <main className="h-[calc(100vh_-_91px)] bg-[#333333]">
         <Element />
       </main>
       <Footer />
