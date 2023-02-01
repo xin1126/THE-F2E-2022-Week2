@@ -5,11 +5,15 @@
 @layer base {
     @font-face {
       font-family: 'GenJyuuGothic';
-      src: url('./assets/font/GenJyuuGothic-Bold.ttf') format('truetype');
+      src: url('./font/GenJyuuGothic-P-Medium.ttf') format('truetype');
     }
   
     html {
       font-family: GenJyuuGothic;
+    }
+
+    h2 {
+      @apply text-3xl
     }
   }
   
