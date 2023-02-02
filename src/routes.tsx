@@ -2,6 +2,7 @@ import type { RouteObject } from 'react-router-dom'
 import Home from './pages/home/index'
 import Archive from './pages/archive/index'
 import Trash from './pages/trash/index'
+import Upload from './pages/upload/index'
 
 const routes: RouteObject[] = [
   {
@@ -15,6 +16,10 @@ const routes: RouteObject[] = [
   {
     path: '/trash',
     element: <Trash />,
+  },
+  {
+    path: '/upload',
+    element: <Upload />,
   },
 ]
 
