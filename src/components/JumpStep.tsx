@@ -1,10 +1,14 @@
 interface Props {
   type: string
-  haveFile?: boolean
+  route?: string
 }
 
-const JumpStep: React.FC<Props> = ({ type, haveFile = false }) => {
+const JumpStep: React.FC<Props> = ({ type, route }) => {
   const navigate = useNavigate()
+
+  const jumpNextStep = () => {
+    if (route) navigate(route)
+  }
 
   return (
     <>
@@ -16,8 +20,9 @@ const JumpStep: React.FC<Props> = ({ type, haveFile = false }) => {
       )}
       {type === 'nextStep' && (
         <div
+          onClick={jumpNextStep}
           className={`flex cursor-pointer items-center rounded-2xl border-2 px-6 text-xl 
-        ${haveFile ? 'border-primary bg-dark text-primary' : 'cursor-not-allowed border-gray bg-light text-gray'}
+        ${route ? 'border-primary bg-dark text-primary' : 'cursor-not-allowed border-gray bg-light text-gray'}
         `}
         >
           下一步
