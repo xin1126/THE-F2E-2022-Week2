@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 interface File {
-  file: string | ArrayBuffer | null
+  file: string
 }
 
 const initialState: File = {
@@ -12,7 +12,7 @@ const file = createSlice({
   name: 'file',
   initialState,
   reducers: {
-    setFite: (state, { payload }: { payload: string | ArrayBuffer | null }) => {
+    setFite: (state, { payload }: { payload: string }) => {
       state.file = payload
     },
   },

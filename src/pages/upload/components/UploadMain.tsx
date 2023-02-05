@@ -22,7 +22,7 @@ const UploadMain: React.FC = () => {
       reader.onload = (e: ProgressEvent<FileReader>) => {
         if (e.target) {
           setFile(e.target.result as string)
-          dispatch(setFite(e.target.result))
+          dispatch(setFite(e.target.result as string))
         }
       }
     }

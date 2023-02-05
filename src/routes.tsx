@@ -3,6 +3,7 @@ import Home from './pages/home/index'
 import Archive from './pages/archive/index'
 import Trash from './pages/trash/index'
 import Upload from './pages/upload/index'
+import Sign from './pages/sign/index'
 
 const routes: RouteObject[] = [
   {
@@ -20,6 +21,10 @@ const routes: RouteObject[] = [
   {
     path: '/upload',
     element: <Upload />,
+  },
+  {
+    path: '/sign',
+    element: <Sign />,
   },
 ]
 
